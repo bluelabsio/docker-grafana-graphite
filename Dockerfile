@@ -23,7 +23,7 @@ RUN     pip install Twisted==11.1.0
 RUN     pip install Django==1.5
 RUN     pip install whisper==0.9.12
 RUN     pip install --install-option="--prefix=/var/lib/graphite" --install-option="--install-lib=/var/lib/graphite/lib" carbon==0.9.12
-RUN     pip install --install-option="--prefix=/var/lib/graphite" --install-option="--install-lib=/var/lib/graphite/webapp" graphite-web==0.9.12
+RUN     pip install --install-option="--prefix=/var/lib/graphite" --install-option="--install-lib=/var/lib/graphite/webapp" git+https://github.com/graphite-project/graphite-web.git@0.9.x
 
 
 
